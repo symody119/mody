@@ -408,7 +408,7 @@ nav.navbar.navbar-default {
   transform: scale(1);
 }
 .glyphicon-scale,.glyphicon-asterisk,.glyphicon-education,.glyphicon-send,.glyphicon-calendar,.glyphicon-user{
-	color: #00000095;
+	color: #000000;
   font-size:35px;
 }
 .glyphicon-icon {
@@ -456,7 +456,7 @@ nav.navbar.navbar-default {
 /*-- //welcome --*/
 /*--news--*/
 .news {
-    -background:url(../images/3.jpg) center fixed ;
+    background:url(../images/22.png) center fixed ;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1545,12 +1545,12 @@ table.table.table-striped,.table-bordered,.bs-docs-example {
     border: 4px double  #00000095;
 }
 .agileits_w3layouts_service_grid i{
-	font-size: 2em;
-    color: #00000095;
+	font-size: 4em;
+    color: #000000;
     line-height: 3.4em;
 }
 .agile_services_grid:hover .agileits_w3layouts_service_grid i{
-	color:#41565e;;
+	columns: #000000;;
 }
 .agileits_w3layouts_service_grid span{
 	width: 5px;
@@ -1646,8 +1646,8 @@ p.w3layouts_para {
 	border: 3px double #999;
 }
 .w3ls_choose_left_grid i{
-	font-size: 1.5em;
-    color: #41565e;;
+	font-size: 2.5em;
+    color: #000000;
     line-height:3em;
 }
 .agileits_choose_right h4 {
