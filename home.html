@@ -7,10 +7,11 @@
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Executive Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Mody SY, devoloppeur, modyman, ingenieur telecom, télécommunication réseaux, administration Réseau et systeme, Ecole superieur polytechnique, senegal, université cheikh antat diop" />
+<script type="application/x-javascript"> 
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -91,10 +92,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="w3_agileits_social_media">
 					<ul>
 						<li class="agileinfo_share">Share On</li>
-						<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="wthree_linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="https://fr-fr.facebook.com/" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://twitter.com/?lang=fr" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://fr.linkedin.com/" class="wthree_linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/?hl=fr" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
@@ -536,7 +537,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 							<div class="col-xs-8 agileits_choose_right">
 								<h4>Un Savoir-faire avéré </h4>
-								<p>la maitrise et l'art de la conception.Nous tavaillons pour concevoir et dévolopper des technologie de rupture</p>
+								<p>la maitrise et l'art de la conception.Nous tavaillons pour concevoir et dévolopper des technologies de rupture</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -567,12 +568,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<h3 class="w3ls_head">Contact</h3>
 			</div>
 			<div class="contact-right-w3-agile">
-			<form action="#" method="post">
-				<input type="text" name="Name" placeholder="Name" required="">
+			<form>
+				<input type="text" id="Name" name="Name" placeholder="Name" required="">
 				<div class="monEspace"></div>
-				<input type="text" name="Number" placeholder="Phone" required="">
-				<textarea name="Comments" placeholder="Message" required=""></textarea>
-				<input type="submit" value="Submit">
+				<input type="text" id="Number" name="Number" placeholder="Phone" required="">
+				<textarea id="Message" name="Comments"  placeholder="Message" required=""></textarea>
+				<input  id ="Submit" type="submit" value="Submit">
 			</form>
 		</div>
 		</div>
@@ -604,9 +605,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-5 w3ls-social-icons">
 								
 								<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-								<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-								<a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
-								<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+								<a class="twitter" href="https://twitter.com/modyman30"><i class="fa fa-twitter"></i></a>
+								<a class="instagram" href="https://www.instagram.com/modyman30/?hl=fr"><i class="fa fa-instagram"></i></a>
+								<a class="linkedin" href="https://www.linkedin.com/in/mody-sy-658a47139/"><i class="fa fa-linkedin"></i></a>
 								<p>Follow Us</p>
 							
 							</div>
@@ -615,7 +616,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				
 						<div class=" -cohl-md-4 w3ls-social-icons">
 								<div align="center">
-									<p><a href="http://modyman.net/"> <i class="glyphicon glyphicon-education" aria-hidden="true"></i>@modyman</a></p>
+									<p><a href="http://modyman.herokuapp.com/"> <i class="glyphicon glyphicon-education" aria-hidden="true"></i>@modyman</a></p>
 								</div>
 						</div>
 				</div>
@@ -635,6 +636,46 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+
+<!--mail sendin ajax-->
+<script type="text/javascript">
+$('#Submit').click(function(e){
+	e.preventDefault();
+	var data = {
+		Name: $('#Name').val(),
+		Number: $('#Number').val(),
+		//objet: $('#object').val(),
+		Message: $('#Message').val()
+	};
+	$.ajax({
+		url: "mail.php",
+		type: 'POST',
+		data: data,
+		success: function(data) {
+			$('#js_alert_success').css({'display' : 'block'});
+			setTimeout(function(){
+				$('#js_alert_success').css({'display' : 'none'});
+				$('#Name').val("");
+				$('#Number').val("");
+				//$('#object').val("");
+				$('#Message').val("")
+			}, 3000);
+		},
+		error: function(data) {
+			$('#js_alert_danger').css({'display' : 'block'});
+			setTimeout(function(){
+				$('#js_alert_danger').css({'display' : 'none'});
+				$('#Name').val("");
+				$('#Number').val("");
+				//$('#object').val("");
+				$('#Message').val("")
+			}, 3000);
+		}
+	});
+});
+
+</script>
+
 
 </body>
 
