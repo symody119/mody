@@ -1497,6 +1497,26 @@ table.table.table-striped,.table-bordered,.bs-docs-example {
 	-ms-transition:0.5s all;
 	transition:0.5s all;
 }
+.buttonContact {
+    color: #fff;
+    font-size: 17px;
+    padding: 4px 0px;
+    margin-top: 25px;
+    width: 60%;
+    background: #212121;
+    border: 2px solid #212121;
+    outline: none;
+    transition: 0.5s all;
+}
+
+.buttonContact :hover {
+	color:#fff;
+	background:#60053a;
+	border: 2px solid #60053a;
+
+	transition:0.5s all;
+}
+
 .login-right-w3-agile label {
     -width: 30px;
     -height: 4px;
@@ -2455,6 +2475,10 @@ p.w3layouts_para {
 .contact-right-w3-agile form input[type="submit"] {
     width: 31%;
 }
+
+.buttonContact {
+    width: 31%;
+}
 }
 @media (max-width: 414px){
 .text-right {
@@ -2838,7 +2862,7 @@ p.w3layouts_para {
 .contact-right-w3-agile {
     margin-top: 5em;
 }
-.map iframe 3{
+.map iframe {
     width: 100%;
     border: none;
     min-height: 400px;
