@@ -1,0 +1,28 @@
+
+
+body{
+  --background-image: url("../img/logo1.jpg");
+  height: auto;
+  width: auto;
+  --background-color: #008B8B;
+}
+.padding{
+  padding: 25px;
+}
+
+.modyEspace{
+  padding: 10px;
+}
+
+img{
+  margin: 5px auto;
+  height:110px;
+  -width: 250px;
+  width: auto;
+  margin: 0px auto;
+  padding:0px;
+  
+  border-color: black;
+  border: 2px solid black;
+
+}

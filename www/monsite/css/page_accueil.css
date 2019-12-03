@@ -1,0 +1,135 @@
+*
+{
+    text-align: center;
+}
+
+select
+{
+    text-align: center;
+}
+body{
+
+  background-size: cover;
+  -background-color: #008B8B;
+  background-color: rgb(242, 255, 254);
+
+
+}
+
+h2{
+	font-size: 2.2em;
+	color: #2F4F4F;
+	 text-align:center;
+
+  font-weight:300;
+  margin-bottom:25px;
+  color:#2F4F4F;
+  text-shadow:1px 1px 0px black;
+}
+
+
+h3{
+	color:#2F4F4F ;
+	font-size: 2.3em;
+	text-decoration: underline;
+}
+
+h1
+{
+	text-align: left;
+	border: double;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-shadow: 1px 1px 0px white;
+	-moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     margin: 50px 500px;
+     color: #2F4F4F;
+     font-size: 4em;
+ }
+
+strong
+{
+	color:black;
+	text-align: left;
+}
+.prenom
+{
+	display: block;
+}
+
+.sexe
+{
+	display: block;
+}
+
+p
+{
+	margin-right: 1000px;
+text-align: center;
+}
+
+.age
+{
+	display: block;
+}
+
+.registration {
+  text-align: center;
+  color: black;
+  background:#008B8B;
+  border: double;
+  -border-radius: 10px;
+  -height:1120px;
+    height:auto;
+  -width: 283px ;
+    width: auto;
+
+  margin: 12px auto;
+  padding:2px;
+  display:block;
+  border: 3px solid black;
+ }
+
+.button
+{
+  position:inherit;
+  float: inherit;
+  width:170px;
+  margin-top:0px;
+  background:black;
+  color:#fff;
+  font-weight:100;
+  text-shadow:0px 0px 0px #2d7baf;
+  box-shadow:0px 0px 0px #2d7baf;
+  -webkit-transition: all .0s ease-in-out;
+  -moz-transition: all .0s ease-in-out;
+  transition: all .0s ease-in-out;
+}
+
+
+input
+{
+	text-align: center;
+}
+
+h4 {
+  text-align:center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:2em;
+  font-weight:100;
+  margin-bottom:25px;
+  color:#FFFFFF;
+  text-shadow:1px 1px 0px #000000;
+}
+
+a, a:visited {
+    text-decoration:none;
+    color:#7f8c8d;
+    font-weight:400;
+    text-shadow:1px 1px 0px white;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/page_accueil.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="css/styleAccueil.css">
+        <link rel="stylesheet" href="css/ionic.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="inscription.html"><h4>Inscription</h4></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="index.html"><p>S'incrire</p></a></li>
+                  <li><a href="index.html"><p>se connecter</p></a></li>
+            
+                </ul>
+                </ul>
+              </div>
+            </div>
+    </nav>
+
+
+</head>
+
+
+
+<body>
+
+
+    <div class="padding"></div>
+    
+        <p>Bienvenue Sur la page d'inscription</p>
+        <div class="modyEspace"></div>
+    
+    <div class="radiobutton">
+            <div class="modyEspace"></div>
+            <div align="center">
+
+                <h5>remplir le formulaire</h5>
+                <form method="post" action="http://localhost/monApi/backend/insert.php" >
+                <div class="form-groupe">
+                    <label class="control-label">prenom:</label><br>
+                    <label><input type="text" name="prenom" placeholder="Mody"  value="" class="form-control"/></label>
+                </div>
+
+                <div class="form-groupe">
+                    <label class="control-label">nom:</label><br>
+                    <label><input type="text" name="nom"  placeholder="SY" value="" class="form-control"/></label>
+                </div>
+
+                <div class="form-groupe">
+                    <label class="control-label">N° Compte:</label><br>
+                    <label><input type="text" name="numcompte" placeholder="2019XXXX"  value="" class="form-control" /></label>
+                </div>
+
+                <div class="form-groupe">
+                    <label class="control-label">code:</label><br>
+                    <label> <input type="password" name="code"   value="" placeholder="...." class="form-control"/></label>
+                </div>
+
+                <div class="form-groupe">
+                    <label class="control-label">solde:</label><br>
+                    <label> <input type="number" name="solde"  value="" placeholder="5000 ($)" class="form-control"/></label>
+                </div><div class="modyEspace"></div>
+                    
+                
+                    <!--input type="button" id="insert"  value="insert" class="form-control"/-->
+                    <button  type="submit"  class="button button-block">enregistrer</button>
+                
+                </form>
+
+            </div>
+            <div class="modyEspace"></div>
+        </div>
+   
+</body>
+</html>

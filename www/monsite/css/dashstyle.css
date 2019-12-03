@@ -1,0 +1,78 @@
+.dashbord{
+     width: 75%;
+     display: flex;
+}
+.sidenav{
+     width: 25%;
+     background-color:steelblue;
+     height: fit-content;
+     color: white;
+     font-size: 16px;
+     border: 1px solid darkcyan;
+}
+.sidenav nav ul{
+     list-style: none;
+}
+.sidenav nav ul li{
+     text-decoration: none;
+     margin-bottom: 15px;
+}
+.sidenav nav ul li a{
+     color: white;
+     text-decoration: none;
+}
+.content{
+     padding: 10px 100px 10px 100px;
+     width: 75%;
+}
+.message{
+     font-size: 25px;
+     letter-spacing: 3px;
+     text-align: center;
+}
+.form-control{
+     height: 30px;
+     border: 1px solid steelblue;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+}
+.form-control:focus{
+     border: 0in;
+     outline: 0ch;
+     border-radius:0px;
+     border-bottom: 2px solid darkcyan;
+     -webkit-border-radius:0px;
+     -moz-border-radius:0px;
+     -ms-border-radius:0px;
+     -o-border-radius:0px;
+}
+.btn-submit{
+     width: 100%;
+     background-color: darkcyan;
+     color: white;
+     padding: 7px 0px 7px 0px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+}
+.btn-submit:hover{
+     cursor: pointer;
+}
+.btn-search{
+          background-color: darkcyan;
+          color: white;
+          padding: 7px 20px 7px 20px;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+}
+.mb-10{
+     margin-bottom: 10px;
+}
