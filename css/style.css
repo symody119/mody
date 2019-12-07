@@ -42,12 +42,9 @@ input[type="submit"],input[type="reset"],.w3layouts_mail_grid_left2 a,.w3agile_s
 }
 /*-- banner --*/
 .banner{
-	background:url(../images/1.jpg) no-repeat 0px 0px;
+    background:url(../images/1.jpg) no-repeat 0px 0px;
+    -background-color: #000000;
 	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
 	min-height:730px;
 }
 
@@ -117,20 +114,7 @@ nav.navbar.navbar-default {
     position: relative;
 
 }
-/*--
-.navbar-brand:after{
-	content: '';
-    background: url(../images/1.png) no-repeat 0px 0px;
-    width: 40px;
-    height: 94px;
-    position: absolute;
-    right: 2%;
-    top: 0%;
-    transform: rotate(35deg);
-	-webkit-transform: rotate(35deg);
-	-moz-transform: rotate(35deg);
-	-o-transform: rotate(35deg);
-	-ms-transform: rotate(35deg);} --*/
+
 
 .navbar-brand span {
     color: #ff3197;
@@ -631,7 +615,7 @@ p.w3agile {
     color: black;
     font-size: 14px;
     line-height: 28px;
-    text-transform: capitalize;
+    -text-transform: capitalize;
 }
 .footer li a:hover{
     color: #13020d;
@@ -1671,11 +1655,11 @@ p.w3layouts_para {
     line-height:3em;
 }
 .agileits_choose_right h4 {
-    font-size: 22PX;
+    font-size: 16px;
     color: #212121;
     letter-spacing: 2px;
     margin-bottom: 1em;
-    text-transform: capitalize;
+    
 }
 .agileits_choose_right p{
 	color:#999;
@@ -1956,7 +1940,7 @@ ul.social-icons li {
 .w3ls_courses_left_grid h3 {
     font-size: 22px;
     color: #212121;
-    text-transform: capitalize;
+    -text-transform: capitalize;
     letter-spacing: 2px;
 }
 .w3ls_courses_left_grid h3 i{
